@@ -177,11 +177,3 @@ npm run test:e2e
 ```
 
 The backend integration-test profile uses an in-memory H2 database in PostgreSQL compatibility mode and runs the Flyway migrations. The Playwright workflow covers registration, task creation and editing, drag-and-drop status change, deletion, logout, and login. GitHub Actions runs backend tests, frontend tests/build, dependency audit, and the browser workflow.
-
-## Screenshots
-
-No screenshots are checked in yet. Add dashboard and task-board captures here after launching the application.
-
-## Scope and future improvements
-
-The current authorization model intentionally gives each account access only to its own tasks. Real-time task events are private to the task owner; shared workspaces, task assignment between accounts, and online presence need a membership/sharing model before they can be exposed safely. The profile page is read-only, settings currently cover theme preference, and recent activity is based on updated tasks rather than a separate audit log. Future work could add workspace invitations, presence, profile editing, audit history, comment editing, and notification preferences.
